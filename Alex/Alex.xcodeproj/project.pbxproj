@@ -25,6 +25,12 @@
 		54F6E0B7255C2A3100C11E7D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0B6255C2A3100C11E7D /* Common.swift */; };
 		54F6E0BD255CBB4500C11E7D /* BigImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0BC255CBB4500C11E7D /* BigImageView.swift */; };
 		54F6E0C9255CBC4000C11E7D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0C8255CBC4000C11E7D /* UIView+Extension.swift */; };
+		54F6E0E2255D32E000C11E7D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0E1255D32E000C11E7D /* Date+Extension.swift */; };
+		54F6E0E7255D402B00C11E7D /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0E6255D402B00C11E7D /* Image+Extension.swift */; };
+		54F6E0EC255D407500C11E7D /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0EB255D407500C11E7D /* UINavigationController+Extension.swift */; };
+		54F6E0F1255D539000C11E7D /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0F0255D539000C11E7D /* UIScrollView+Extension.swift */; };
+		54F6E0F6255D541900C11E7D /* UIKit+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0F5255D541900C11E7D /* UIKit+Ex.swift */; };
+		54F6E0FB255D545A00C11E7D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0FA255D545A00C11E7D /* Toast.swift */; };
 		79F6E68B09680BE3562F4CDA /* Pods_AlexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCA081061122C40C338E6E6 /* Pods_AlexUITests.framework */; };
 		890DD32DC529AFBA44EDA215 /* Pods_Alex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A5C3D599C076D37FE796E2 /* Pods_Alex.framework */; };
 		BBBED769AA6ADF910E016E1D /* Pods_AlexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A933F0976A4E3DF485E1A4 /* Pods_AlexTests.framework */; };
@@ -75,6 +81,12 @@
 		54F6E0B6255C2A3100C11E7D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		54F6E0BC255CBB4500C11E7D /* BigImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageView.swift; sourceTree = "<group>"; };
 		54F6E0C8255CBC4000C11E7D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		54F6E0E1255D32E000C11E7D /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		54F6E0E6255D402B00C11E7D /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		54F6E0EB255D407500C11E7D /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		54F6E0F0255D539000C11E7D /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		54F6E0F5255D541900C11E7D /* UIKit+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Ex.swift"; sourceTree = "<group>"; };
+		54F6E0FA255D545A00C11E7D /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		56B53E1AB4BBD06014690D78 /* Pods-AlexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlexUITests/Pods-AlexUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76A933F0976A4E3DF485E1A4 /* Pods_AlexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		796697D6CC8B8E77C61F3A98 /* Pods-AlexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexUITests.release.xcconfig"; path = "Target Support Files/Pods-AlexUITests/Pods-AlexUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,15 +136,21 @@
 		5420F97E2555276D001E7525 /* Kit */ = {
 			isa = PBXGroup;
 			children = (
+				54F6E0FA255D545A00C11E7D /* Toast.swift */,
 				5420F9792554FF8F001E7525 /* SendEvent.swift */,
 				5420F98C2555367F001E7525 /* Color+Extensions.swift */,
 				5420F99425553882001E7525 /* String+Extensions.swift */,
 				5420F98725552E54001E7525 /* Safe.swift */,
 				54F6E0B6255C2A3100C11E7D /* Common.swift */,
 				54F6E0A9255C270200C11E7D /* AppInfo.swift */,
+				54F6E0F0255D539000C11E7D /* UIScrollView+Extension.swift */,
+				54F6E0F5255D541900C11E7D /* UIKit+Ex.swift */,
 				54F6E0AE255C291800C11E7D /* AppPath.swift */,
 				5420F97F25552779001E7525 /* Then.swift */,
 				54F6E0C8255CBC4000C11E7D /* UIView+Extension.swift */,
+				54F6E0E1255D32E000C11E7D /* Date+Extension.swift */,
+				54F6E0E6255D402B00C11E7D /* Image+Extension.swift */,
+				54F6E0EB255D407500C11E7D /* UINavigationController+Extension.swift */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -437,16 +455,22 @@
 				54B200C725270D920060535D /* ViewController.swift in Sources */,
 				54F6E0C9255CBC4000C11E7D /* UIView+Extension.swift in Sources */,
 				54B200C325270D920060535D /* AppDelegate.swift in Sources */,
+				54F6E0FB255D545A00C11E7D /* Toast.swift in Sources */,
 				5420F97A2554FF8F001E7525 /* SendEvent.swift in Sources */,
 				5420F98025552779001E7525 /* Then.swift in Sources */,
+				54F6E0E7255D402B00C11E7D /* Image+Extension.swift in Sources */,
 				54F6E0B7255C2A3100C11E7D /* Common.swift in Sources */,
 				5420F99525553882001E7525 /* String+Extensions.swift in Sources */,
 				5420F98D2555367F001E7525 /* Color+Extensions.swift in Sources */,
 				5420F98825552E54001E7525 /* Safe.swift in Sources */,
+				54F6E0F1255D539000C11E7D /* UIScrollView+Extension.swift in Sources */,
 				54B200C525270D920060535D /* SceneDelegate.swift in Sources */,
+				54F6E0EC255D407500C11E7D /* UINavigationController+Extension.swift in Sources */,
 				54F6E0BD255CBB4500C11E7D /* BigImageView.swift in Sources */,
+				54F6E0E2255D32E000C11E7D /* Date+Extension.swift in Sources */,
 				54F6E0AF255C291800C11E7D /* AppPath.swift in Sources */,
 				54F6E0AA255C270200C11E7D /* AppInfo.swift in Sources */,
+				54F6E0F6255D541900C11E7D /* UIKit+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

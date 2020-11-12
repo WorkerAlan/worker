@@ -108,7 +108,4 @@ extension String {
     func substring(with range: NSRange) -> String {
         return oc_string.substring(with: range)
     }
-//    func linesWithRect(_ font: UIFont, _ size: CGSize) -> Int {
-//
-//    }
 }

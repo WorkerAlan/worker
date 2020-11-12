@@ -73,6 +73,58 @@ extension UIView {
         set { orgin = newValue.offset(-width/2.0, -height/2.0) }
         get { CGPoint(x: centerX, y: centerY) }
     }
+    
+    var currentController: UIViewController? {
+        var res = next
+        while let r = res {
+            if r.isKind(of: UIViewController.self) {
+                return r as? UIViewController
+            }
+            res = next?.next
+        }
+        return nil
+    }
+    
+    func removeSubviews() {
+        var a = [UIView]()
+        a.append(self)
+        while let v = a.first {
+            a.append(contentsOf: v.subviews)
+            v.removeFromSuperview()
+        }
+        /*
+         self.subviews.forEach { (v) in
+             v.removeSubviews()
+         }
+         self.removeFromSuperview()
+         */
+    }
+    
+    var allSubViews: [UIView] {
+        var v = [UIView]()
+        self.subviews.forEach { (s) in
+            v.append(s)
+            v.append(contentsOf: s.allSubViews)
+        }
+        return v
+        
+//        var v1 = [UIView]()
+//        var v2 = [UIView]()
+//        v2.append(self)
+//        while !v2.isEmpty {
+//            let v = v2.removeFirst()
+//            v1.append(v)
+//            v2.append(contentsOf: v)
+//        }
+//        return v1
+    }
+    
+    func randColors() {
+        #if DEBUG
+        var a = [UIView]()
+        
+        #endif
+    }
 }
 
 extension CGPoint {
