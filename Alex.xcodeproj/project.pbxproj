@@ -23,6 +23,8 @@
 		54F6E0AA255C270200C11E7D /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0A9255C270200C11E7D /* AppInfo.swift */; };
 		54F6E0AF255C291800C11E7D /* AppPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0AE255C291800C11E7D /* AppPath.swift */; };
 		54F6E0B7255C2A3100C11E7D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0B6255C2A3100C11E7D /* Common.swift */; };
+		54F6E0BD255CBB4500C11E7D /* BigImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0BC255CBB4500C11E7D /* BigImageView.swift */; };
+		54F6E0C9255CBC4000C11E7D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E0C8255CBC4000C11E7D /* UIView+Extension.swift */; };
 		79F6E68B09680BE3562F4CDA /* Pods_AlexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCA081061122C40C338E6E6 /* Pods_AlexUITests.framework */; };
 		890DD32DC529AFBA44EDA215 /* Pods_Alex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A5C3D599C076D37FE796E2 /* Pods_Alex.framework */; };
 		BBBED769AA6ADF910E016E1D /* Pods_AlexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A933F0976A4E3DF485E1A4 /* Pods_AlexTests.framework */; };
@@ -71,6 +73,8 @@
 		54F6E0A9255C270200C11E7D /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		54F6E0AE255C291800C11E7D /* AppPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPath.swift; sourceTree = "<group>"; };
 		54F6E0B6255C2A3100C11E7D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		54F6E0BC255CBB4500C11E7D /* BigImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageView.swift; sourceTree = "<group>"; };
+		54F6E0C8255CBC4000C11E7D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		56B53E1AB4BBD06014690D78 /* Pods-AlexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlexUITests/Pods-AlexUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76A933F0976A4E3DF485E1A4 /* Pods_AlexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		796697D6CC8B8E77C61F3A98 /* Pods-AlexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexUITests.release.xcconfig"; path = "Target Support Files/Pods-AlexUITests/Pods-AlexUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				54F6E0A9255C270200C11E7D /* AppInfo.swift */,
 				54F6E0AE255C291800C11E7D /* AppPath.swift */,
 				5420F97F25552779001E7525 /* Then.swift */,
+				54F6E0C8255CBC4000C11E7D /* UIView+Extension.swift */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 		54B200C125270D910060535D /* Alex */ = {
 			isa = PBXGroup;
 			children = (
+				54F6E0BB255CBB0C00C11E7D /* ALKit */,
 				5420F97E2555276D001E7525 /* Kit */,
 				54B200C225270D910060535D /* AppDelegate.swift */,
 				54B200C425270D920060535D /* SceneDelegate.swift */,
@@ -185,6 +191,14 @@
 				54B200E625270D930060535D /* Info.plist */,
 			);
 			path = AlexUITests;
+			sourceTree = "<group>";
+		};
+		54F6E0BB255CBB0C00C11E7D /* ALKit */ = {
+			isa = PBXGroup;
+			children = (
+				54F6E0BC255CBB4500C11E7D /* BigImageView.swift */,
+			);
+			path = ALKit;
 			sourceTree = "<group>";
 		};
 		CFB009170942A73954C0A18C /* Pods */ = {
@@ -421,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54B200C725270D920060535D /* ViewController.swift in Sources */,
+				54F6E0C9255CBC4000C11E7D /* UIView+Extension.swift in Sources */,
 				54B200C325270D920060535D /* AppDelegate.swift in Sources */,
 				5420F97A2554FF8F001E7525 /* SendEvent.swift in Sources */,
 				5420F98025552779001E7525 /* Then.swift in Sources */,
@@ -429,6 +444,7 @@
 				5420F98D2555367F001E7525 /* Color+Extensions.swift in Sources */,
 				5420F98825552E54001E7525 /* Safe.swift in Sources */,
 				54B200C525270D920060535D /* SceneDelegate.swift in Sources */,
+				54F6E0BD255CBB4500C11E7D /* BigImageView.swift in Sources */,
 				54F6E0AF255C291800C11E7D /* AppPath.swift in Sources */,
 				54F6E0AA255C270200C11E7D /* AppInfo.swift in Sources */,
 			);
